@@ -1,0 +1,95 @@
+* {
+    background: white;
+    font-family: 'Montserrat', 'Arial', 'Sans Serif';
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#link-container {
+    width: 100%;
+    height: 100%;
+    background: #4c9876;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.pfp {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+#radstads {
+    background-image: url('./assets/pfp400x400.jpg');
+}
+
+#gladstads {
+    background-image: url('./assets/gladstads.jpg');
+}
+
+.title {
+    font-size: 1.75rem;
+    background: inherit;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.link {
+    height: 64px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background: white;
+    color: #4c9876;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover {
+    background: #183b2e;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}
+
+
+/* breaking point for linktree is 575 px where it has the rounded corners */
+
+/* dynamic resizing */
+@media (min-width:575px) {
+    #app {
+        background: white;
+        padding-top: 40px;
+    }
+  #link-container {
+    min-width: 575px;
+    max-width: 580px;
+    width: 30%;
+    height: 100%;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background: #4c9876;
+  }
+}
